@@ -37,8 +37,7 @@ public class BrowserWindowHndling {
 		System.out.println("Parent window handle is:"+parentwindowhandle);
 		
 		
-		String childwindowhandle = it.next();
-		
+		String childwindowhandle = it.next();		
 		System.out.println("Child window handle is:"+childwindowhandle);
 		
 		driver.switchTo().window(childwindowhandle);
@@ -52,4 +51,9 @@ public class BrowserWindowHndling {
 		System.out.println("Parent window title is:"+driver.getTitle());
 	}
 
+	public void test()
+	{
+		System.out.println("test method");
+	}
+	
 }
